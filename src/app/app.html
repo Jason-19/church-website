@@ -16,13 +16,12 @@
         </button>
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex shrink-0 items-center">
+        <div class="flex shrink-0 items-center" routerLink="/home" >
           <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-            <a href="#" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-black">Inicio</a>
+            <a routerLink="/home" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-black">Inicio</a>
             <a routerLink="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-black">Nosotros</a>
             <a routerLink="/events" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-black">Eventos</a>
             <a routerLink="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-black">Contacto</a>
@@ -49,9 +48,9 @@
 
           <div *ngIf="isProfileMenuOpen" anchor="bottom end" 
           class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg outline outline-black/5">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
+            <a routerLink="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Your profile</a>
+            <a routerLink="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Settings</a>
+            <a routerLink="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:outline-hidden">Sign out</a>
           </div>
         </div>
       </div>
@@ -60,10 +59,10 @@
 
   <div *ngIf="isMobileMenuOpen" id="mobile-menu" class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Inicio</a>
-        <a href="/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Nosotros</a>
-        <a href="/events" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Eventos</a>
-        <a href="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Contacto</a>
+        <a routerLink="/home" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Inicio</a>
+        <a routerLink="/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Nosotros</a>
+        <a routerLink="/events" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Eventos</a>
+        <a routerLink="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/5 hover:text-black">Contacto</a>
     </div>
   </div>
 </nav>
