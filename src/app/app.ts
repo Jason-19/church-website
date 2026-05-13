@@ -12,12 +12,4 @@ export class App {
   protected readonly title = signal('church-website');
   isProfileMenuOpen = false;
   isMobileMenuOpen = false;
-
-  constructor() {
-    console.log(this.isProfileMenuOpen);
-    console.log(this.isMobileMenuOpen);
-  }
-  toggleProfileMenu() {
-    this.isProfileMenuOpen = !this.isProfileMenuOpen;
-  }
 }
